@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using FiscalControl.CrossCutting.Util.Enum;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FiscalControl.Domain.Entities
 {
@@ -6,11 +7,14 @@ namespace FiscalControl.Domain.Entities
     {
         public Guid Id { get; set; }
         public decimal Saldo { get; set; }
-        public string Tipo { get; set; }
+        public EnumTipoContaBancaria Tipo { get; set; }
 
         // Chave estrangeira para Usuario (Relação de muitos para um)
         [ForeignKey("UsuarioId")]
         public Guid UsuarioId { get; set; }
         public virtual Usuario Usuario { get; set; }
+        public virtual List<Receita> ReceitasEntrada { get; set; } = new List<Receita>();
+        public virtual List<Despesa> Despesas { get; set; } = new List<Despesa>();
+        public virtual List<Transacao> Transacoes { get; set; } = new List<Transacao>();
     }
 }

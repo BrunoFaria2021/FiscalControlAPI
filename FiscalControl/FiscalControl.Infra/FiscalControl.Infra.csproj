@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Interfaces\" />
     <Folder Include="Data\Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FiscalControl.Domain\FiscalControl.Domain.csproj" />
   </ItemGroup>
 
 </Project>

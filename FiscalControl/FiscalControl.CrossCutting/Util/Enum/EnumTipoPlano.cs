@@ -1,4 +1,4 @@
-﻿namespace GestaoDiet.CrossCutting.Util.Enum
+﻿namespace FiscalControl.CrossCutting.Util.Enum
 {
     public enum EnumTipoPlano
     {

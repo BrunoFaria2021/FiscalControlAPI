@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Entities\fafibwvm.m45~" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="EntitiesCostumizada\" />
   </ItemGroup>
 

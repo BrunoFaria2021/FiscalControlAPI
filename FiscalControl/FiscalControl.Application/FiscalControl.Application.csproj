@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.2.0" />
+	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.2.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\FiscalControl.CrossCutting\FiscalControl.CrossCutting.csproj" />
+    <ProjectReference Include="..\FiscalControl.Infra\FiscalControl.Infra.csproj" />
   </ItemGroup>
 
 </Project>

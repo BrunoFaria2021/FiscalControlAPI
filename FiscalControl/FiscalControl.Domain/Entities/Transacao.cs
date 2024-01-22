@@ -11,9 +11,8 @@ namespace FiscalControl.Domain.Entities
         public EnumTipoTransacao Tipo { get; set; }
         [ForeignKey("UsuarioId")]
         public Guid UsuarioId { get; set; }
-        public virtual Usuario? Usuario { get; set; }
-        [ForeignKey("DespesaId")]
+        public virtual Usuario Usuario { get; set; }
         public Guid DespesaId { get; set; }
-        public virtual Despesa? Despesa { get; set; }
+        public virtual Despesa Despesa { get; set; }
     }
 }

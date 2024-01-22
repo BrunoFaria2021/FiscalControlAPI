@@ -15,7 +15,8 @@ namespace FiscalControl.Domain.Entities
         //(Relação de muitos para um)
         [ForeignKey("UsuarioId")]
         public Guid UsuarioId { get; set; }
-        public virtual Usuario? Usuario { get; set; }
+        public virtual Usuario Usuario { get; set; }
+
         public virtual List<Transacao> Transacoes { get; set; }
     }
 }

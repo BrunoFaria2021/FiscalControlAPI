@@ -9,6 +9,6 @@ namespace FiscalControl.Infra.Data.Interfaces
         RetornoApi<Usuario> BuscarUsuario(Guid id);
         RetornoApi<Usuario> CriarUsuario(Usuario usuario);
         RetornoApi<Usuario> EditarUsuario(Guid id, Usuario usuario);
-        RetornoApi<bool> DeletarUsuario(Guid id);
+        RetornoApi<Usuario> DeletarUsuario(Guid id);
     }
 }

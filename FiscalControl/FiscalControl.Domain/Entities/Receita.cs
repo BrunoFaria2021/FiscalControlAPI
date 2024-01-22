@@ -12,10 +12,10 @@ namespace FiscalControl.Domain.Entities
         [ForeignKey("CategoriaId")]
         public Guid CategoriaId { get; set; }
         public virtual Categoria Categoria { get; set; }
-
-        //(Relação de muitos para um)
         [ForeignKey("UsuarioId")]
         public Guid UsuarioId { get; set; }
         public virtual Usuario Usuario { get; set; }
+
+
     }
 }

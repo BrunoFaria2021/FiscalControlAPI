@@ -1,4 +1,4 @@
-﻿]namespace FiscalControl.Application.DTO
+﻿namespace FiscalControl.Application.DTO
 {
     public class DespesaDTO
     {

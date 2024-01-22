@@ -13,8 +13,10 @@ namespace FiscalControl.Domain.Entities
         [ForeignKey("UsuarioId")]
         public Guid UsuarioId { get; set; }
         public virtual Usuario Usuario { get; set; }
-        public virtual List<Receita> ReceitasEntrada { get; set; } = new List<Receita>();
+
+        
         public virtual List<Despesa> Despesas { get; set; } = new List<Despesa>();
+        public List<Receita> ReceitasEntrada { get; set; } = new List<Receita>();
         public virtual List<Transacao> Transacoes { get; set; } = new List<Transacao>();
     }
 }

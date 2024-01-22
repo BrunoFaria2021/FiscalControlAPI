@@ -1,14 +1,15 @@
-﻿using FiscalControl.Application.ViewModel;
+﻿using FiscalControl.Application.DTO;
+using FiscalControl.Application.ViewModel;
 using FiscalControl.CrossCutting.Extensions;
 
 namespace FiscalControl.Application.Interfaces
 {
     public interface IUsuarioAppService
     {
-        RetornoApi<List<UsuarioViewModel>> BuscarTodosUsuarios();
-        RetornoApi<UsuarioViewModel> BuscarUsuario(Guid id);
-        RetornoApi<UsuarioViewModel> CriarUsuario(UsuarioViewModel usuario);
-        RetornoApi<UsuarioViewModel> EditarUsuario(Guid id, UsuarioViewModel usuario);
-        RetornoApi<bool> DeletarUsuario(Guid id);
+        Task<RetornoApi<List<UsuarioViewModel>>> BuscarTodosUsuarios();
+        Task<RetornoApi<UsuarioViewModel>> BuscarUsuario(Guid id);
+        Task<RetornoApi<UsuarioViewModel>> CriarUsuario(UsuarioDTO usuarioDTO);
+        Task<RetornoApi<UsuarioViewModel>> EditarUsuario(Guid id, UsuarioDTO usuarioDTO);
+        Task<RetornoApi<UsuarioViewModel>> DeletarUsuario(Guid id);
     }
 }

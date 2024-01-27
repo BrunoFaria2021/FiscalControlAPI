@@ -18,7 +18,7 @@ namespace FiscalControl.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get() 
         {
             var dados = await _usuarioAppService.BuscarTodosUsuarios();
 

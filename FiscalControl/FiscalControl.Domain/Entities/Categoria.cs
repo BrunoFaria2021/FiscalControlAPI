@@ -8,7 +8,8 @@ namespace FiscalControl.Domain.Entities
         public Guid Id { get; set; }
         public string Nome { get; set; }
         public EnumTipoCategoria Tipo { get; set; }
-     
+        //public string NomePersonalizado { get; set; }
+
 
         [ForeignKey("UsuarioId")]
         public Guid UsuarioId { get; set; }
